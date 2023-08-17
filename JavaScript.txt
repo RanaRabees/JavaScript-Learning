@@ -1,0 +1,136 @@
+What is Web API?
+
+API stands for Application Programming Interface.
+
+A Web API is an application programming interface for the Web.
+
+A Browser API can extend the functionality of a web browser.
+
+A Server API can extend the functionality of a web server.
+
+
+
+
+Browser APIs
+
+All browsers have a set of built-in Web APIs to support complex operations, and to help accessing data.
+
+For example, the Geolocation API can return the coordinates of where the browser is located.
+
+
+
+
+Third Party APIs
+
+Third party APIs are not built into your browser.
+
+To use these APIs, you will have to download the code from the Web.
+
+Examples:
+
+	YouTube API - Allows you to display videos on a web site.
+	Twitter API - Allows you to display Tweets on a web site.
+	Facebook API - Allows you to display Facebook info on a web site.
+
+
+
+Web Forms API
+
+Web History API
+
+Web Storage API
+
+Web Workers API
+
+Web Fetch API
+
+Web Geolocation API
+
+
+What is a Web Worker?
+
+When executing scripts in an HTML page, the page becomes unresponsive until the script is finished.
+
+A web worker is a JavaScript that runs in the background, independently of other scripts, without 
+affecting the performance of the page. You can continue to do whatever you want: clicking, selecting
+things, etc., while the web worker runs in the background.
+
+
+What is a Web Storage API?
+
+The Web Storage API is a simple syntax for storing and retrieving data in the browser.
+It is very easy to use
+
+
+What is a Workers API?
+
+A web worker is a JavaScript running in the background, without affecting the performance of the page.
+
+
+What is a Fetch API?
+
+The Fetch API interface allows web browser to make HTTP requests to web servers.
+
+😀 No need for XMLHttpRequest anymore.
+
+
+What is a Geolocation API?
+
+Locate the User's Position
+The HTML Geolocation API is used to get the geographical position of a user.
+
+Since this can compromise privacy, the position is not available unless the user approves it.
+
+
+AJAX Introduction
+
+AJAX is a developer's dream, because you can:
+
+Read data from a web server - after the page has loaded
+Update a web page without reloading the page
+Send data to a web server - in the background
+
+
+What is AJAX?
+
+AJAX = Asynchronous JavaScript And XML.
+
+AJAX is not a programming language.
+
+AJAX just uses a combination of:
+
+	A browser built-in XMLHttpRequest object (to request data from a web server)
+	JavaScript and HTML DOM (to display or use the data)
+
+AJAX is a misleading name. AJAX applications might use XML to transport data,
+but it is equally common to transport data as plain text or JSON text.
+
+How AJAX Works
+
+1. An event occurs in a web page (the page is loaded, a button is clicked)
+2. An XMLHttpRequest object is created by JavaScript
+3. The XMLHttpRequest object sends a request to a web server
+4. The server processes the request
+5. The server sends a response back to the web page
+6. The response is read by JavaScript
+7. Proper action (like page update) is performed by JavaScript
+
+AJAX allows web pages to be updated asynchronously by exchanging data with a web server
+behind the scenes. This means that it is possible to update parts of a web page, without
+reloading the whole page.
+
+Modern Browsers (Fetch API)
+
+Modern Browsers can use Fetch API instead of the XMLHttpRequest Object.
+
+The Fetch API interface allows web browser to make HTTP requests to web servers.
+
+If you use the XMLHttpRequest Object, Fetch can do the same in a simpler way.
+
+AJAX - The XMLHttpRequest Object
+
+The keystone of AJAX is the XMLHttpRequest object.
+Create an XMLHttpRequest object
+Define a callback function
+Open the XMLHttpRequest object
+Send a Request to a server

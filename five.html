@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<style>
+    #container {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: yellow;
+    }
+
+    #animate {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: red;
+    }
+</style>
+
+<body>
+    <a href="./one.html" target="_rana">One</a>
+    <a href="./two.html" target="_rana">Two</a>
+    <a href="./three.html" target="_rana">Three</a>
+    <a href="./four.html" target="_rana">Four</a>
+    <a href="./five.html" target="_rana">Five</a>
+    <a href="./six.html" target="_rana">Six</a>
+    <a href="./seven.html" target="_rana">Seven</a>
+    <a href="./eight.html" target="_rana">Eight</a>
+    <a href="./nine.html" target="_rana">Nine</a>
+    <p><button onclick="myMove()">Click Me</button></p>
+
+    <div id="container">
+        <div id="animate"></div>
+    </div>
+
+    <script>
+        function myMove() {
+            let id = null;
+            const elem = document.getElementById("animate");
+            let pos = 0;
+            clearInterval(id);
+            id = setInterval(frame, 5);
+            function frame() {
+                if (pos == 350) {
+                    clearInterval(id);
+                } else {
+                    pos++;
+                    elem.style.top = pos + "px";
+                    elem.style.left = pos + "px";
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

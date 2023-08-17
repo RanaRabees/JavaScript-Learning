@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <a href="./one.html" target="_rana">One</a>
+    <a href="./two.html" target="_rana">Two</a>
+    <a href="./three.html" target="_rana">Three</a>
+    <a href="./four.html" target="_rana">Four</a>
+    <a href="./five.html" target="_rana">Five</a>
+    <a href="./six.html" target="_rana">Six</a>
+    <a href="./seven.html" target="_rana">Seven</a>
+    <a href="./eight.html" target="_rana">Eight</a>
+    <a href="./nine.html" target="_rana">Nine</a>ٖ
+    <h2>JavaScript try catch</h2>
+
+    <p>Please input a number between 5 and 10:</p>
+
+    <input id="demo" type="text">
+    <button type="button" onclick="myFunction()">Test Input</button>
+
+    <p id="p01"></p>
+
+    <script>
+        function myFunction() {
+            const message = document.getElementById("p01");
+            message.innerHTML = "";
+            let x = document.getElementById("demo").value;
+            try {
+                if (x.trim() == "") throw "is empty";
+                if (isNaN(x)) throw "is not a number";
+                x = Number(x);
+                if (x > 10) throw "is too high";
+                if (x < 5) throw "is too low";
+            }
+            catch (err) {
+                message.innerHTML = "Input " + err;
+            }
+            finally {
+                document.getElementById("demo").value = "";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
